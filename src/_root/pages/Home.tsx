@@ -54,7 +54,7 @@ const Home = () => {
       </div>
 
       <div className="home-creators">
-        <h3 className="h3-bold text-light-1">Users</h3>
+        <h3 className="h3-bold text-light-1"> Latest Users</h3>
         {isUserLoading && !creators ? (
           <Loader />
         ) : (
