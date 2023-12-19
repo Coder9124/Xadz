@@ -113,4 +113,4 @@ const Explore = () => {
   );
 };
 
-export default Explore;
+export default explore;
