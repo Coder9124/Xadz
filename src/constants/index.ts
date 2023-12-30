@@ -10,7 +10,6 @@ export const sidebarLinks = [
     label: "Explore",
   },
   {
-  {
     imgURL: "/assets/icons/chat.svg",
     route: "google.com", // Example external link
     label: "Google",
