@@ -11,7 +11,7 @@ export const sidebarLinks = [
   },
   {
     imgURL: "/assets/icons/chat.svg",
-    route: "google.com", // Example external link
+    route: "https://www.google.com", // Example external link
     label: "Google",
     external: true, // Indicate that it's an external link
   },
