@@ -11,9 +11,9 @@ export const sidebarLinks = [
   },
   {
     imgURL: "/assets/icons/chat.svg",
-    route: "/,
+    route: "/",
     label: "Coming Soon",
-    external: true,
+    // external: true,
   },
   {
     imgURL: "/assets/icons/gallery-add.svg",
