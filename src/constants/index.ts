@@ -15,11 +15,6 @@ export const sidebarLinks = [
     label: "Saved",
   },
   {
-    imgURL: "/assets/icons/chat.svg",
-    route: "google.com",
-    label: "Google",
-  },
-  {
     imgURL: "/assets/icons/gallery-add.svg",
     route: "/create-post",
     label: "Create Post",
