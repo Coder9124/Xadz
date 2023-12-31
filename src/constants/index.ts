@@ -34,9 +34,9 @@ export const bottombarLinks = [
     label: "Explore",
   },
   {
-    imgURL: "/assets/icons/bookmark.svg",
-    route: "/saved",
-    label: "Saved",
+    imgURL: "/assets/icons/chat.svg",
+    route: "/",
+    label: "Coming Soon",
   },
   {
     imgURL: "/assets/icons/gallery-add.svg",
