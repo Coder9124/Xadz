@@ -36,7 +36,7 @@ export const bottombarLinks = [
   {
     imgURL: "/assets/icons/chat.svg",
     route: "/",
-    label: "Coming Soon",
+    label: "Soon",
   },
   {
     imgURL: "/assets/icons/gallery-add.svg",
