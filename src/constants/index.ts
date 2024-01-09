@@ -11,9 +11,9 @@ export const sidebarLinks = [
   },
   {
     imgURL: "/assets/icons/chat.svg",
-    route: "/",
+    route: "https://xadz.vercel.app",
     label: "Coming Soon",
-    // external: true,
+    external: true,
   },
   {
     imgURL: "/assets/icons/gallery-add.svg",
@@ -35,8 +35,9 @@ export const bottombarLinks = [
   },
   {
     imgURL: "/assets/icons/chat.svg",
-    route: "/",
-    label: " Soon ",
+    route: "https://xadz.vercel.app",
+    label: " Soon ", 
+    external: true, 
   },
   {
     imgURL: "/assets/icons/gallery-add.svg",
