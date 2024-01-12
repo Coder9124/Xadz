@@ -131,7 +131,7 @@ const SignupForm = () => {
         <Button type="submit" className="shad-button_primary" style={{ background: 'linear-gradient(to right, #43C6AC, #191654)' }}>
           {isCreatingAccount ? (
             <div className="flex-center gap-2">
-              <Loader /> Loading...
+              <Loader /> 
             </div>
           ): "Sign up"}
         </Button>
