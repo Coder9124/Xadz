@@ -1,5 +1,4 @@
 import { Link, useLocation } from "react-router-dom";
-
 import { bottombarLinks } from "@/constants";
 
 const Bottombar = () => {
@@ -9,13 +8,20 @@ const Bottombar = () => {
     <section className="bottom-bar">
       {bottombarLinks.map((link) => {
         const isActive = pathname === link.route;
+
+        // Define the gradient color here
+        const gradientColor = isActive
+          ? "linear-gradient(45deg, #FF0099 0%, #493240 105%)"
+          : "none";
+
         return (
           <Link
             key={`bottombar-${link.label}`}
             to={link.route}
             className={`${
-              isActive && "rounded-[10px] bg-primary-500 "
-            } flex-center flex-col gap-1 p-2 transition`}>
+              isActive && "rounded-[10px] "
+            } flex-center flex-col gap-1 p-2 transition`}
+            style={{ background: gradientColor }}>
             <img
               src={link.imgURL}
               alt={link.label}
