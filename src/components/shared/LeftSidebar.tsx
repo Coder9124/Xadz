@@ -1,10 +1,10 @@
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
-
 import { INavLink } from "@/types";
 import { sidebarLinks } from "@/constants";
 import { Button } from "@/components/ui/button";
 import { useSignOutAccount } from "@/lib/react-query/queriesAndMutations";
 import { useUserContext, INITIAL_USER } from "@/context/AuthContext";
+import './extra.css'; // Import the CSS file
 
 const LeftSidebar = () => {
   const navigate = useNavigate();
@@ -36,8 +36,7 @@ const LeftSidebar = () => {
         </Link>
 
         {isLoading || !user.email ? (
-          <div className="h-14">
-          </div>
+          <div className="h-14"></div>
         ) : (
           <Link to={`/profile/${user.id}`} className="flex gap-3 items-center">
             <img
@@ -61,10 +60,19 @@ const LeftSidebar = () => {
                 key={link.label}
                 className={`leftsidebar-link group ${
                   isActive && "bg-primary-500"
-                }`}>
+                }`}
+              >
                 <NavLink
                   to={link.route}
-                  className="flex gap-4 items-center p-4">
+                  className={`flex gap-4 items-center p-4 leftsidebar-link`}
+                  activeClassName="active"
+                  onMouseOver={(e) => {
+                    e.currentTarget.classList.add("hover");
+                  }}
+                  onMouseOut={(e) => {
+                    e.currentTarget.classList.remove("hover");
+                  }}
+                >
                   <img
                     src={link.imgURL}
                     alt={link.label}
@@ -83,7 +91,8 @@ const LeftSidebar = () => {
       <Button
         variant="ghost"
         className="shad-button_ghost"
-        onClick={(e) => handleSignOut(e)}>
+        onClick={(e) => handleSignOut(e)}
+      >
         <img src="/assets/icons/logout.svg" alt="logout" />
         <p className="small-medium lg:base-medium">Logout</p>
       </Button>
