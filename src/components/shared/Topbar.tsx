@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Button } from '../ui/button';
 import { useSignOutAccount } from '@/lib/react-query/queriesAndMutations';
 import { useUserContext } from '@/context/AuthContext';
+import './extra.css'; // Import the CSS file
 
 const Topbar = () => {
   const { mutate: signOut, isSuccess } = useSignOutAccount();
@@ -10,7 +11,7 @@ const Topbar = () => {
   const { user } = useUserContext();
 
   useEffect(() => {
-    if(isSuccess) navigate(0); 
+    if (isSuccess) navigate(0); 
   }, [isSuccess])
 
   return (
@@ -39,7 +40,7 @@ const Topbar = () => {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default Topbar
+export default Topbar;
