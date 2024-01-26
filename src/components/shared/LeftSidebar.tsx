@@ -65,7 +65,6 @@ const LeftSidebar = () => {
                 <NavLink
                   to={link.route}
                   className={`flex gap-4 items-center p-4 leftsidebar-link`}
-                  activeClassName="active"
                   onMouseOver={(e) => {
                     e.currentTarget.classList.add("hover");
                   }}
