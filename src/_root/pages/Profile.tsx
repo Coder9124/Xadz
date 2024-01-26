@@ -93,10 +93,12 @@ const Profile = () => {
               </Link>
             </div>
             <div className={`${user.id === id && "hidden"}`}>
-              <Button type="button" className="shad-button_primary px-8">
-                Viewing
-              </Button>
-            </div>
+              <Link to="https://xadz.vercel.app">
+                <Button type="button" className="shad-button_primary px-8">
+                   Home
+                </Button>
+               </Link>
+              </div>
           </div>
         </div>
       </div>
