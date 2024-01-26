@@ -1,0 +1,19 @@
+.leftsidebar-link:hover {
+    background: linear-gradient(45deg, #FF0099 0%, #493240 100%);
+  }
+  
+  .leftsidebar-link.active {
+    background: linear-gradient(45deg, #FF0099 0%, #493240 100%);
+  }
+  
+  .topbar {
+    background: linear-gradient(45deg, #141313 0%, #1d1f21 100%);
+  }
+  
+  .topbar a {
+    color: #ffffff; /* Set the text color to white or any contrasting color */
+  }
+  
+  .topbar a:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
